@@ -21,29 +21,9 @@ const multimediaRoute = require('./multimedia.route');
 const ebookRoute = require('./ebook.route');
 const homeworkRoute = require('./homework.route');
 const quickRecapRoute = require('./quickrecap.route');
-const demolishedRoute = require('./demolished.route');
-const studentRoute = require('./student.route');
-const saralRoute = require('./saral.info.route');
-const campusRoute = require('./campus.route');
-const mappingRoute = require('./mapping.route');
-const SessionRoute = require('./sessions.route');
-const sectionRoute = require('./section.route');
-const studentSessionRoute = require('./student.session.route');
-const StudentAttendanceRoute = require('./studentattendance.route');
 const quizSubmitRoute = require('./quizSubmit.route');
-const ClassTeacherAssignRoute = require('./classteacherassign.route');
-const departmentRoute = require('./department.user.route');
-const studentLeftReasonRoute = require('./student.left.reason.route');
-const grievanceRedressalRoute = require('./grievance.redressal.route');
-const assectRoute = require('./assect.route');
-const hostel = require('./hostel.route');
-const attendanceVerifyRoute = require('./attendance.verify.route');
 const menuRoute = require('./menu.router');
-const lectureAttendance = require('./lecture.attendance.route');
-const staffAttendance = require('./staff.attendance.route');
 const recordedBroadcastRoute = require('./recorded.broadcast.route');
-const studentPromoteRoute = require('./student.promote.route');
-const leavingCertRoute = require('./leavingcert.route');
 const studentQuestion = require('./student.question.route');
 const lectureVideoRoute = require('./lecture.route');
 
@@ -54,18 +34,12 @@ const defaultRoutes = [
     path: '/auth',
     route: authRoute,
   },
-  {
-    path: '/studentpromote',
-    route: studentPromoteRoute,
-  },
+
   {
     path: '/users',
     route: userRoute,
   },
-  {
-    path: '/sections',
-    route: sectionRoute,
-  },
+
   {
     path: '/videos',
     route: videoRoute,
@@ -138,79 +112,9 @@ const defaultRoutes = [
     path: '/roles',
     route: roleRoute,
   },
-
-  {
-    path: '/demolished',
-    route: demolishedRoute,
-  },
-  {
-    path: '/saralInfo',
-    route: saralRoute,
-  },
-  {
-    path: '/student',
-    route: studentRoute,
-  },
-  {
-    path: '/campus',
-    route: campusRoute,
-  },
-  {
-    path: '/mapping',
-    route: mappingRoute,
-  },
-  {
-    path: '/session',
-    route: SessionRoute,
-  },
-  {
-    path: '/studentSession',
-    route: studentSessionRoute,
-  },
-  {
-    path: '/classteacher',
-    route: ClassTeacherAssignRoute,
-  },
-  {
-    path: '/studentattendance',
-    route: StudentAttendanceRoute,
-  },
-  {
-    path: '/lectureattendance',
-    route: lectureAttendance,
-  },
-  {
-    path: '/staffattendancenew',
-    route: staffAttendance,
-  },
   {
     path: '/quiz-submissions',
     route: quizSubmitRoute,
-  },
-
-  {
-    path: '/department',
-    route: departmentRoute,
-  },
-  {
-    path: '/studentleft',
-    route: studentLeftReasonRoute,
-  },
-  {
-    path: '/grievanceredressal',
-    route: grievanceRedressalRoute,
-  },
-  {
-    path: '/assets',
-    route: assectRoute,
-  },
-  {
-    path: '/hostel',
-    route: hostel,
-  },
-  {
-    path: '/attendance-verify',
-    route: attendanceVerifyRoute,
   },
   {
     path: '/menu',
@@ -219,10 +123,6 @@ const defaultRoutes = [
   {
     path: '/recordedbroadcast',
     route: recordedBroadcastRoute,
-  },
-  {
-    path: '/leaving-cert',
-    route: leavingCertRoute,
   },
   {
     path: '/student-question',

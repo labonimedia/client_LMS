@@ -6,23 +6,6 @@ const auth = require('../../middlewares/auth');
 
 const router = express.Router();
 
-router.post('/sansthan-register', validate(authValidation.sansthanRegister), authController.sansthanRegister);
-router.post('/verify-number', validate(authValidation.verifyMobNumber), authController.verifyNumber);
-router.post('/verify-userId', validate(authValidation.checkUserIdExist), authController.checkUserIdExist);
-router.post('/sansthan-login', validate(authValidation.sansthanLogin), authController.loginSansthan);
-
-// router.post('/staff-login', validate(authValidation.login), authController.loginStaff);
-
-// router.post('/student-login', validate(authValidation.studentLogin), authController.loginStudentAndParent);
-
-// router.post('/student-login', validate(authValidation.studentLogin), authController.loginStudentAndParent);
-
-router.post('/department-login', validate(authValidation.login), authController.loginDepUser);
-
-router
-  .post('/department/verifyNo', validate(authValidation.resetPassVerifyNo), authController.resetPassFirtsTimeForDeparrtment)
-  .post('/department/set-password', validate(authValidation.setPassword), authController.setPasswordForDepartment);
-
 router.post('/first-verifyNo-login', validate(authValidation.resetPassVerifyNo), authController.resetPassFirtsTime);
 router.post('/set-password', validate(authValidation.setPassword), authController.setPassword);
 
