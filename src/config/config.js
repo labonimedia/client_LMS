@@ -56,7 +56,7 @@ module.exports = {
     url: (() => {
       switch (envVars.NODE_ENV) {
         case 'development':
-          return envVars.MONGODB_URL_DEV || 'mongodb://127.0.0.1:27017/Lms_Simplified_Schooling';
+          return envVars.MONGODB_URL_DEV || 'mongodb://127.0.0.1:27017/Lms_test';
         case 'production':
           return envVars.MONGODB_URL_PROD || 'mongodb://127.0.0.1:27017/Lms_Simplified_Schooling';
         case 'test':
